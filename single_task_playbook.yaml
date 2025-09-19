@@ -1,0 +1,9 @@
+---
+- name: Module testing
+  hosts: localhost
+  tasks:
+    - name: Create file with context
+      my_own_module:
+        path: './qshar1408_playbook.txt'
+        content: "This file create by playbook"
+
